@@ -13,7 +13,7 @@ import { useNotificationProvider } from './components/refine-ui/notification/use
 import { ThemeProvider } from './components/refine-ui/theme/theme-provider'
 import { dataProvider } from './providers/data'
 import Dashboard from './pages/dashboard'
-import { BookOpenIcon, Home } from 'lucide-react'
+import { BookOpenIcon, Home, Zap } from 'lucide-react'
 import { Layout } from './components/refine-ui/layout/layout'
 import SubjectsList from './pages/subjects/list'
 import SubjectsCreate from './pages/subjects/create'
@@ -32,6 +32,10 @@ function App() {
                 syncWithLocation: true,
                 warnWhenUnsavedChanges: true,
                 projectId: '8DKJiP-QO4izy-EFGYgO',
+                title: {
+                  text: <span className='logo-text text-2xl text-primary'>Sennar</span>,
+                  icon: <Zap className="w-6 h-6 text-primary" />,
+                }
               }}
               resources={[
                 {

@@ -224,7 +224,6 @@ body {
 
     .logo {
       @apply flex items-center justify-center;
-
       img {
         @apply h-12 w-12;
       }

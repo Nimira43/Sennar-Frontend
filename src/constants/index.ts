@@ -70,6 +70,7 @@ export const DEPARTMENT_OPTIONS = DEPARTMENTS.map((dept) => ({
 }))
 
 export const MOCK_SUBJECTS: Subject[] = [
+  
   // ============================
   // IT & TECHNOLOGY DEPARTMENTS
   // ============================

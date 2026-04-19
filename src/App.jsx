@@ -10,9 +10,26 @@ export default function App() {
       <Navbar />
 
       <Routes>
-        <Route path='/' element={<Hero />} />
-        <Route path='/departments' element={<Departments />} />
-        <Route path='/subjects' element={<Subjects />} />
+        <Route
+          path='/'
+          element={
+            <Hero />
+          }
+        />
+        
+        <Route
+          path='/departments'
+          element={
+            <Departments />
+          }
+        />
+        
+        <Route
+          path='/subjects'
+          element={
+            <Subjects />
+          }
+        />
       </Routes>
     </>
   )

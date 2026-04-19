@@ -5,7 +5,8 @@
   --main-light: #ff6a33;
   --dark: #111;
   --light: #fffdfa;
-  --card: #ffffff;
+  --card: #fff;
+  --black: #000;
   --shadow: rgba(0, 0, 0, 0.08);
   --grey-1: #333;
   --grey-2: #777;
@@ -80,9 +81,11 @@ body {
 .hero {
   text-align: center;
   padding: 6rem 2rem;
-  background: linear-gradient(135deg,
-      var(--main) 0%,
-      var(--main-light) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--main) 0%,
+    var(--main-light) 100%
+  );
   color: var(--light);
   box-shadow: 0 4px 12px var(--shadow);
 }
@@ -121,7 +124,7 @@ body {
 }
 
 .hero-btn.primary:hover {
-  background: #000;
+  background: var(--black);
 }
 
 .hero-btn.secondary {
@@ -131,6 +134,22 @@ body {
 
 .hero-btn.secondary:hover {
   background: var(--grey-5);
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--grey-3);
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: var(--transitioning);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--main);
+  box-shadow: 0 0 0 3px rgba(255, 68, 0, 0.2);
 }
 
 /* Table container */
@@ -150,10 +169,17 @@ table {
 }
 
 th {
-  background: var(--dark);
+  background: var(--main);
   color: var(--light);
   padding: 0.75rem;
   text-align: left;
+  cursor: pointer;
+  user-select: none;
+  transition: var(--transitioning);
+}
+
+th:hover {
+  color: var(--main-light);
 }
 
 td {
